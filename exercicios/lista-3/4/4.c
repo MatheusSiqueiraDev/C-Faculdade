@@ -18,5 +18,6 @@ main() {
     scanf("%f", &valor3);
     resultado1 = maior2(valor1, valor2);
     resultado2 = maior3(valor1, valor2, valor3);
-    printf("");
+    printf("O maior numero entre %f e %f eh %f\n", valor1, valor2, resultado1);
+    printf("O maior numero entre %f e %f e %f eh %f", valor1, valor2, valor3, resultado2);
 }
