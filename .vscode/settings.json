@@ -2,6 +2,7 @@
     "files.associations": {
         "3.C": "cpp",
         "stdio.h": "c",
-        "10.C": "cpp"
+        "10.C": "cpp",
+        "stdlib.h": "c"
     }
 }

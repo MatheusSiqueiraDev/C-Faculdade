@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void inversor1() {
-
+void inversor1(int vetor[]) {
+    
 }
 
 void inversor2() {
@@ -10,10 +10,12 @@ void inversor2() {
 }
 
 main() {
-    const int tamanho = 5;
-    int vetor[tamanho];
-    for(int i = 0; i <= tamanho; i++) {
-        vetor[i] = tamanho + i;
+    int vetor1[7] = {1, 2, 3, 4, 5, 6, 7};
+    int soma = 0, i = 0;
+    for(i; soma < sizeof(vetor1); i++) {
+        soma = soma + vetor1[i];
     }
-    
+    printf("%d", sizeof(vetor1));
+    inversor1(vetor1);
+
 }
