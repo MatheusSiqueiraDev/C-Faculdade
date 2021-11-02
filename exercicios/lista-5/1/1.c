@@ -1,21 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void inversor1(int vetor[]) {
+void inverteVetor(int v[]) {
     
 }
 
-void inversor2() {
+void invertePonteiro(int * p) {
 
 }
 
 main() {
-    int vetor1[7] = {1, 2, 3, 4, 5, 6, 7};
-    int soma = 0, i = 0;
-    for(i; soma < sizeof(vetor1); i++) {
-        soma = soma + vetor1[i];
-    }
-    printf("%d", sizeof(vetor1));
-    inversor1(vetor1);
+    int * vetorPonteiro;
+    int vetor[7], i;
 
+    vetorPonteiro = (int *)malloc(sizeof(int[7]));
+    // Inserindo dados no Vetor
+    for(i = 0; i < 7; i++) {
+        printf("Informe o valor do %d elemento: ", i);
+        scanf("%d", &vetor[i]);
+    }  
+    // Inserindo dados no Ponteiro
+    for(i = 0; i < 7; i++) {
+        printf("Informe o valor do %d elemento: ", i);
+        scanf("%d", &vetorPonteiro[i]);
+    }  
+    free(vetorPonteiro);
 }
